@@ -44,7 +44,6 @@ export default function
             type="text"
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Ej. Comida, Jugo de Naranja, Ensalada, Ejercicio, Pesas, Bicicleta"
-            value={activity.name}
           >
           </input>
 
@@ -58,7 +57,6 @@ export default function
             type="number"
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Calorias. Ej. 300 ó 500"
-            value={activity.calories}
           >
           </input>
 

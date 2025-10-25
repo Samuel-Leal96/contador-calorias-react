@@ -58,7 +58,6 @@ export default function
             type="number"
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Calorias. Ej. 300 ó 500"
-            value={activity.calories}
           >
           </input>
 

@@ -5,7 +5,7 @@ export default function
   () {
 
   const [activity, setActivity] = useState({
-    category: 1,
+    category: 2,
     name: '',
     calories: 0
   })
@@ -37,14 +37,13 @@ export default function
         </div>
 
         <div className="grid grid-cols-1 gap-3" >
-          <label htmlFor="name" className="font-bold">Actividad:</label>
+          <label htmlFor="name" className="font-bold">Categoría:</label>
 
           <input
             id="name"
             type="text"
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Ej. Comida, Jugo de Naranja, Ensalada, Ejercicio, Pesas, Bicicleta"
-            value={activity.name}
           >
           </input>
 
@@ -58,7 +57,6 @@ export default function
             type="number"
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Calorias. Ej. 300 ó 500"
-            value={activity.calories}
           >
           </input>
 
