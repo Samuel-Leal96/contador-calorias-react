@@ -10,7 +10,7 @@ export default function
     calories: 0
   })
 
-  const handleChange = (e: any) => {
+  const handleChange = (e) => {
 
     setActivity({
       ...activity,

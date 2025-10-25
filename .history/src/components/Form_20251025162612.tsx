@@ -10,12 +10,8 @@ export default function
     calories: 0
   })
 
-  const handleChange = (e: any) => {
-
-    setActivity({
-      ...activity,
-      [e.target.id]: e.target.value
-    })
+  const handleChange = () => {
+    console.log('Algo cambio')
   }
 
   return (
@@ -31,7 +27,6 @@ export default function
             className="border border-slate-300 p-2 rounded-lg w-full bg-white"
             id="category"
             value={activity.category}
-            onChange={handleChange}
           >
             {categories.map(category => (
               <option
@@ -54,7 +49,6 @@ export default function
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Ej. Comida, Jugo de Naranja, Ensalada, Ejercicio, Pesas, Bicicleta"
             value={activity.name}
-            onChange={handleChange}
           >
           </input>
 
@@ -69,7 +63,6 @@ export default function
             className="border border-slate-300 p-2 rounded-lg"
             placeholder="Calorias. Ej. 300 ó 500"
             value={activity.calories}
-            onChange={handleChange}
           >
           </input>
 

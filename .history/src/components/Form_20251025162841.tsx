@@ -10,12 +10,9 @@ export default function
     calories: 0
   })
 
-  const handleChange = (e: any) => {
-
-    setActivity({
-      ...activity,
-      [e.target.id]: e.target.value
-    })
+  const handleChange = (e) => {
+    console.log(e.target)
+    console.log('Algo cambio')
   }
 
   return (
