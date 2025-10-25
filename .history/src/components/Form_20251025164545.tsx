@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent } from "react"
+import { useState } from "react"
 import { categories } from "../data/categories"
 
 export default function
@@ -10,7 +10,7 @@ export default function
     calories: 0
   })
 
-  const handleChange = (e: ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e) => {
 
     setActivity({
       ...activity,
