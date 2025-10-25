@@ -18,7 +18,7 @@ export default function
 
     setActivity({
       ...activity,
-      [e.target.id]: isNumberField ? +e.target.value : e.target.value
+      [e.target.id]: isNumberField ? +e.target.value : e.target.value;
     })
   }
 
