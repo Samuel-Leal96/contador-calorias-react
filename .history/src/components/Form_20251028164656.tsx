@@ -16,7 +16,11 @@ const initialState = {
 export default function
   ({dispatch}: FormProps) {
 
-  const [activity, setActivity] = useState<Activity>(initialState)
+  const [activity, setActivity] = useState<Activity>({
+    category: 1,
+    name: '',
+    calories: 0
+  })
 
   const handleChange = (e: ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>) => {
     const isNumberField = ['category', 'calories'].includes(e.target.id)
@@ -37,7 +41,11 @@ export default function
 
     dispatch({type: 'save-activity', payload: {newActivity: activity}})
 
-    setActivity(initialState)
+    setActivity({
+      category: 1,
+      name: '',
+      calories: 0
+    })
   }
 
   return (
