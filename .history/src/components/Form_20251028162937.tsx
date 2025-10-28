@@ -33,7 +33,7 @@ export default function
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    dispatch({type: 'save-activity', payload: {newActivity: activity}})
+    console.log('Submit...')
   }
 
   return (
