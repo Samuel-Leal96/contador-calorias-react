@@ -18,12 +18,7 @@ export const activityReducer = (
 
     if (action.type === 'save-activity') {
         //* Este codigo maneja la logica para manejar el state
-
-
-        return{
-            ...state,
-            activities: [...state.activities, action.payload.newActivity]
-        }
+        console.log(action.payload.newActivity);
     }
 
     return state;
