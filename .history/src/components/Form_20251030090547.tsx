@@ -40,10 +40,7 @@ export default function
 
     dispatch({type: 'save-activity', payload: {newActivity: activity}})
 
-    setActivity({
-      ...initialState,
-      id: uuidv4()
-    })
+    setActivity(initialState)
   }
 
   return (
