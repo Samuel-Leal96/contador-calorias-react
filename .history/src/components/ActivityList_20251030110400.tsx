@@ -10,7 +10,7 @@ type ActivityListProps = {
     dispatch: Dispatch<ActivityActions>
 }
 
-export default function ActivityList({ activities, dispatch }: ActivityListProps) {
+export default function ActivityList({ activities }: ActivityListProps) {
 
     const categoryName = useMemo(() =>
         (category: Activity['category']) => categories.map( cat => cat.id === category ? cat.name : '')
@@ -38,7 +38,7 @@ export default function ActivityList({ activities, dispatch }: ActivityListProps
                     </div>
 
                     <div className="flex gap-5 items-center">
-                        <button onClick={()=> dispatch({type:'set-activeId', payload:{id: activity.id}}) }>
+                        <button>
                             <PencilSquareIcon
                                 className='h-8 w-8 text-gray-800'
                             />
